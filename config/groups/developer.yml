@@ -49,10 +49,9 @@ attributes:
 
         # Programming Language and Framework
         - scala
-        - play
+        - typesafe-activator # previous play framework
         - python
         - python3
-        - r
         - node
         - go
 
