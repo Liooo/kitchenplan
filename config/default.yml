@@ -9,7 +9,5 @@ attributes:
         apps:
         cask_apps:
         cask_fonts:
-            - inconsolata
     nodejs:
         apps:
-            - bower

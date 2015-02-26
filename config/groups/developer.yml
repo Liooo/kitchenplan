@@ -1,11 +1,7 @@
 recipes:
     global:
-        - dotfiles::gitconfig
         - applications::ssh_config
-        - dotfiles::vim
-        - dotfiles::workspace
         - applications::mysql
-        - applications::skylab
     mac_os_x:
         - applications::gnu-tar
         - osxdefaults::set_terminal_profile
@@ -18,6 +14,11 @@ recipes:
         - osxdefaults::increase_window_resize_speed_for_cocoa_applications
         - osxdefaults::speed_up_mission_control_animations
         - osxdefaults::tap_to_click
+        - osxdefaults::do_not_show_dashboard_as_a_space
+        - osxdefaults::dock_automatically_hide_and_show_the_dock
+        - osxdefaults::dock_do_not_animate_opening_applications_from_the_dock
+        - osxdefaults::dock_position_the_dock_on_the_right_side
+        - osxdefaults::
         - osxdefaults::do_not_show_dashboard_as_a_space
         - osxdefaults::finder_allow_text_selection_in_quick_look
         - osxdefaults::finder_display_full_path
@@ -100,16 +101,17 @@ attributes:
         - zsh
 
         cask_apps:
+            - google-chrome
             - chrome-devtools
-            - dash
+            - firefox
             - iterm2
+            - dash
             - slack
             - sourcetree
             - rubymine
             - dropbox
             - google-japanese-ime
             - alfred
-            - google-chrome
             - flexiglass
             - totalspaces 
             - skype
@@ -121,9 +123,11 @@ attributes:
             - teamviewer
 
         cask_fonts:
-            - inconsolata
+            - ricty
     nodejs:
         apps:
+            - bower
+            - underscore-node
             - uglify-js
             - uglifycss
             - bower
