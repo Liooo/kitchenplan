@@ -1,5 +1,6 @@
 groups:
-    - groupa
+    - developer
+    - zsh
 recipes:
     mac_os_x:
         - osxdefaults::set_computer_name
@@ -8,6 +9,4 @@ attributes:
         computername: MyComputerName
     homebrewalt:
         apps:
-            - git-extras
         cask_apps:
-            - sourcetree

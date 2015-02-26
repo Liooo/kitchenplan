@@ -1,0 +1,136 @@
+recipes:
+    global:
+        - dotfiles::gitconfig
+        - applications::ssh_config
+        - dotfiles::vim
+        - dotfiles::workspace
+        - applications::mysql
+        - applications::skylab
+    mac_os_x:
+        - applications::gnu-tar
+        - osxdefaults::set_terminal_profile
+        - osxdefaults::add_a_context_menu_item_for_showing_the_web_inspector_in_web_views
+        - osxdefaults::disable_press-and-hold_for_keys_in_favor_of_key_repeat
+        - osxdefaults::set_a_blazingly_fast_keyboard_repeat_rate
+        - osxdefaults::disable_gatekeeper
+        - osxdefaults::enable_assistive_devices
+        - osxdefaults::enable_full_keyboard_access_for_all_controls
+        - osxdefaults::increase_window_resize_speed_for_cocoa_applications
+        - osxdefaults::speed_up_mission_control_animations
+        - osxdefaults::tap_to_click
+        - osxdefaults::do_not_show_dashboard_as_a_space
+        - osxdefaults::finder_allow_text_selection_in_quick_look
+        - osxdefaults::finder_display_full_path
+        - osxdefaults::finder_use_column_view_in_all_finder_windows_by_default
+        - osxdefaults::finder_automatically_open_a_new_finder_window_when_a_volume_is_mounted
+        - osxdefaults::finder_unhide_home
+        - osxdefaults::finder_search_the_current_folder_by_default
+
+        ### what's this?
+        #- osxdefaults::disable_front_row
+        
+        ### might enable later
+        #- osxdefaults::prevent_time_machine_from_prompting_to_use_new_hard_drives_as_backup_volume
+        #- osxdefaults::disable_disk_image_verification
+        
+attributes:
+    homebrewalt:
+        apps:
+        # Git, GitHub
+        - git
+        - git-extras
+        - hub
+
+        # Android
+        - android-ndk
+        - android-platform-tools
+        - android-sdk
+
+        # Programming Language and Framework
+        - scala
+        - play
+        - python
+        - python3
+        - r
+        - node
+        - go
+
+        # Graph, Image
+        - graphviz
+        - opencv
+        - imagemagick
+        - gnuplot
+
+        # Web Develop
+        - selenium-server-standalone
+        - chromedriver
+        - chrome-cli
+        - phantomjs
+
+        # Database
+        - mysql
+        - postgresql
+        - sqlite
+
+        # Util
+        - vimpager
+        - httpie
+        - ctags
+        - rmtrash
+        - openssl
+        - sl
+        - ffmpeg
+        - fontconfig
+        - taglib
+        - gawk
+        - the_silver_searcher
+        - gcc
+        - tig # git cui interactiv
+        - tmux
+        - reattach-to-user-namespace # for tmux
+        - tree
+        - jq # command line json util
+        - ghostscript
+        - mercurial
+        - wget
+        - colordiff
+        - nkf
+        - coreutils # `g[unix command]` e.g. gls
+        - nmap
+        - zsh
+
+        cask_apps:
+            - chrome-devtools
+            - dash
+            - iterm2
+            - slack
+            - sourcetree
+            - rubymine
+            - dropbox
+            - google-japanese-ime
+            - alfred
+            - google-chrome
+            - flexiglass
+            - totalspaces 
+            - skype
+            - transmission
+            - vlc
+            - spark
+            - witch
+            - karabiner
+            - teamviewer
+
+        cask_fonts:
+            - inconsolata
+    nodejs:
+        apps:
+            - uglify-js
+            - uglifycss
+            - bower
+            - grunt
+            - grunt-cli
+    gems:
+        - sass
+        - git-up
+        - kstrano
+        - awesome_print
