@@ -18,7 +18,6 @@ recipes:
         - osxdefaults::dock_automatically_hide_and_show_the_dock
         - osxdefaults::dock_do_not_animate_opening_applications_from_the_dock
         - osxdefaults::dock_position_the_dock_on_the_right_side
-        - osxdefaults::
         - osxdefaults::do_not_show_dashboard_as_a_space
         - osxdefaults::finder_allow_text_selection_in_quick_look
         - osxdefaults::finder_display_full_path
@@ -44,15 +43,13 @@ attributes:
 
         # Android
         - android-ndk
-        - android-platform-tools
         - android-sdk
 
         # Programming Language and Framework
         - scala
-        - play
+        - typesafe-activator # was previously play
         - python
         - python3
-        - r
         - node
         - go
 
@@ -74,6 +71,9 @@ attributes:
         - sqlite
 
         # Util
+        - rbenv
+        - rbenv-default-gems
+        - ruby-build
         - vimpager
         - httpie
         - ctags
@@ -121,9 +121,11 @@ attributes:
             - witch
             - karabiner
             - teamviewer
+            - xtrafinder
+            - java
+            - spectacle
 
         cask_fonts:
-            - ricty
     nodejs:
         apps:
             - bower
@@ -138,3 +140,6 @@ attributes:
         - git-up
         - kstrano
         - awesome_print
+        - pry-byebug
+        - pry-alias
+        - hirb
